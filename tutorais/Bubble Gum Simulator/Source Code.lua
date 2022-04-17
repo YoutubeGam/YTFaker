@@ -1,6 +1,6 @@
 local network=(get_separate_remote and get_separate_remote'NetworkRemoteEvent')or
-                game:Getservice'ReplicatedStorage'.NetworkRemoteEvent
-local Counter=game:Getservice'Players'.LocalPlayer.PlayerGui.SceenGui.StatsFrame.Bubble.Amount
+                game:GetService'ReplicatedStorage'.NetworkRemoteEvent
+local Counter=game:GetService'Players'.LocalPlayer.PlayerGui.ScreenGui.StatsFrame.Bubble.Amount
 _G.run=not _G.run
 while _G.run and wait()do
     local number=Counter.Text:split('/');
